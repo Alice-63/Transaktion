@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>My Task List</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous">
+
+  </head>
+  <body id="body">
+   
+    <div class="inputContainer">
+      <h3>Neu Transaktion</h3>
+      <input id="b_input" type="text" placeholder="Beschreibung" oninput="bInput()">
+      <select name="" id="category">
+        <option value="0">Auswählen</option>
+        <option value="rechnung">Rechnung</option>
+        <option value="gehalt">Gehalt</option>
+        <option value="versicherung">Versicherung</option>
+        <option value="kinder">Kinder Ausgabe</option>
+        <option value=""></option>
+      </select>
+     <div> 
+       <input id="betragInput" type="text" placeholder="Betrag" oninput="betragInput()">
+       <span>€</span>
+    </div>
+    <button id="myBtn" onclick="add();">Hinzufügen</button>
+    </div>
+    <div class="listeContainer">
+      <h3>Neu Transaktion</h3>
+      <div id="liste">
+       
+      </div>
+    </div>
+
+    <div class="ergebnis" style="display: flex;">
+      <div id="ausgabe" style="">
+        <h3>Ausgabe</h3>
+      </div>
+      <div id="bezug">
+        <h3>Bezug</h3>
+      </div>
+    </div>
+    <div id="total">
+      <h3>Total</h3>
+    </div>
+    <div id="warnung"></div>
+    
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

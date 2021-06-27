@@ -1,0 +1,167 @@
+*{box-sizing: border-box;}
+:root
+{
+   --background: #131222;
+   --light:#2d2c4b;
+   --accent:#009ee3;
+
+
+   --textlight:#ffffff;
+   --plus:#3dc438;
+   --minus:#d4141d;
+
+}
+
+
+body
+{
+    font-family: "Segoe UI";
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--textlight);
+
+}
+
+/* ///////////////\\\\\\\\\\\\\\\\\\\\\\\  */
+
+h3
+{
+    border-bottom-;
+}
+
+.inputContainer
+{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.inputContainer>*
+{
+   margin-bottom:15px ; 
+}
+.inputContainer>div
+{
+    display: flex;
+    align-items: center;
+}
+.inputContainer>div>span
+{
+    padding: 0 10px;
+    background-color: var(--accent);
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
+}
+#betragInput
+{
+    flex-grow: 1;
+}
+input
+{
+    outline: none;
+    border: none;
+    background-color: var(--light);
+    height: 30px;
+    color: var(--textlight);
+    padding-left: 15px;
+}
+button
+{
+    outline: none;
+    border: none;
+    background-color: var(--accent);
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    color: var(--textlight);
+    font-weight: bold;
+}
+.listeContainer
+{
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.listeContainer
+{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin-top: 25px;
+}
+#liste
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#liste>div
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+#liste>div>div
+{
+background-color: var(--light);
+flex-grow: 1;
+padding: 6px 10px;
+;
+}
+#liste>div>span:first-child
+{
+    background-color: var(--plus);
+    width: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#liste>div>span:last-child
+{
+    background-color: var(--plus);
+    min-width: 110px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px;
+   
+}
+.ergebnis
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+#ausgabe
+{
+    width: 200px;
+    margin-right: 35px;
+    background-color: var(--minus);
+}
+
+#bezug
+{
+    width: 200px;
+    background-color: var(--plus);
+}
+#total
+{
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: var(--plus);
+}
+#warnung
+{
+ width: 300px;
+ text-align: center;
+}
